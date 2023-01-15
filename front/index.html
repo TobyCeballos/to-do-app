@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <title>ToDo App</title>
+</head>
+<body class="body">
+    <div class="user__data__container gradient">
+        <div>
+            <ul>
+                <li>
+                    <a class="links gradient_3" href="#">
+                        <div class="user__avatar">
+                            <img src="./img/user_example.jpg" width="50px">
+                        </div>
+                        <span class="links__text">Toby Ceballos</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="links links--modifier" href="#">
+                        <span class=" link__icon material-icons-outlined">settings</span>
+                        <span class="links__text">Config.</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="links links--modifier" href="#">
+                        <span class=" link__icon material-icons-outlined">notes</span>
+                        <span class="links__text">Notes</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="links links--modifier logout" href="#">
+                        <span class=" link__icon material-icons-outlined">logout</span>
+                        <span class="links__text">Log out</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="footer__user__data">
+            <span>App created by Toby Ceballos</span>
+        </div>
+    </div>
+    <div class="task__list__container gradient_2">
+        <form action="/newTask" method="post">
+            <input type="text" class="task__input" placeholder="Add new to do...">
+            <input type="submit" class="add material-icons-outlined" value="add">
+        </form>
+        
+        <div class="tasklist">
+            <div class="task__card gradient_4">
+                <div class="task__icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+
+                <div class="task__text">
+                    <span class="task__name">Do the shopping</span>
+                    <span class="task__date">Last modification: 12/01/23 - 18:01hs</span>
+                </div>
+                <div class="task__buttons">
+                    <button class="task__actions edit"><i class="fas fa-edit"></i></button>
+                    <button class="task__actions delete"><i class="fas fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

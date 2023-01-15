@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background: rgb(14, 10, 51);
+    background: -moz-radial-gradient(circle, rgba(14, 10, 51, 1) 0%, rgba(2, 4, 31, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(14, 10, 51, 1) 0%, rgba(2, 4, 31, 1) 100%);
+    background: radial-gradient(circle, rgba(14, 10, 51, 1) 0%, rgba(2, 4, 31, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0e0a33", endColorstr="#02041f", GradientType=1);
+    display: flex;
+    flex-direction: row;
+}
+
+.login__container {
+    display: flex;
+    background-color: rgba(0, 17, 60, 0.6);
+    border: 3px solid;
+    width: 50%;
+    height: 500px;
+    margin-top: calc(50vh - 250px);
+    margin-left: calc(25% - 3px);
+    backdrop-filter: blur(6px);
+}
+
+
+
+.form__container{
+    width: 50%;
+    text-align: center;
+    align-self: center;
+}
+
+.logo__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background: linear-gradient(225deg, rgb(64, 83, 252) 0%, rgb(120, 255, 251) 100%)1%;
+}
+
+.logo__container img{
+    width: 60%;
+}
+
+.form__title {
+    color: white;
+    font-size: 45px;
+    line-height: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.form__input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 80%;
+    margin-left: calc(10% - 12px);
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 18px;
+    border-radius: 4px;
+}
+
+.form__input::placeholder {
+    color: white;
+}
+
+.form__submit {
+    width: calc(80% + 24px);
+    padding: 12px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    margin-left: calc(10% - 12px);
+    color: white;
+    border: none;
+    background: linear-gradient(225deg, rgb(64, 83, 252) 0%, rgb(120, 255, 251) 100%)1%;
+}
+
+.question{
+    color: white;
+    font-weight: 100;
+}
+
+.question a{
+    text-decoration: none;
+    color: rgb(6, 93, 255);
+}
+
+.gradient {
+    border-image: linear-gradient(225deg, rgb(64, 83, 252) 0%, rgb(120, 255, 251) 100%)1%;
+}
+
+
+@media (max-width: 1500px) {
+    .login__container{
+        width: 70%;
+        margin-left: calc(15% - 3px);
+    }
+}
+@media (max-width: 1100px) {
+    .login__container{
+        width: 90%;
+        margin-left: calc(5% - 3px);
+    }
+}
+
+@media (max-width: 750px) {
+    .login__container{
+        width: 90%;
+        margin-left: calc(5% - 3px);
+    }
+    .logo__container {
+        display: none;
+    }
+
+    .form__container{
+        width: 100%;
+    }
+}
